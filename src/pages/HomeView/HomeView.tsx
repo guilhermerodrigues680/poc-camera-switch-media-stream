@@ -1,4 +1,5 @@
 import { VERSION_INFO } from "../../config/version-info";
+import CameraSwitch from "../../modules/media-stream/components/CameraSwitch";
 
 function HomeView() {
   function getVersionInfoTxt() {
@@ -11,6 +12,10 @@ function HomeView() {
       <section>
         <h3>HomeView</h3>
         <small>{getVersionInfoTxt()}</small>
+
+        <div>
+          <CameraSwitch />
+        </div>
       </section>
     </>
   );
